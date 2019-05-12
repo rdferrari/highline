@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>9too - mapa</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/map.css"/>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,200,100,500,600,700" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class="alt-grid">
+  <ul class="topnav navbar-fixed-top" id="myTopnav">
+		<li>
+			<a href="map.html">
+				<img src="icon/mapa-marker-roxo.svg">
+			</a>
+		</li>
+		<li>
+			<a href="media-gallery.html">
+				<img src="icon/media-gallery.svg">
+			</a>
+		</li>
+			<a href="index.html">
+				<img class="logo" src="icon/logo-slackProjetc.svg">
+			</a>
+	</ul>
+  
+<!-- Map -->
+<div id='map'></div>
+
+<script>
+// Add Map
+mapboxgl.accessToken = 'pk.eyJ1IjoicmRmZXJyYXJpIiwiYSI6ImNpcDQ4Nm12YjAwNnJsZ20zOXdmc29obmcifQ.Shb8a3P1XAV8cPWR1yGDTA';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/rdferrari/ciy0jmj3z004z2sozncmmrs8f', //hosted style id
+    center: [-48.4388358, -27.617626],
+    zoom: 15,
+    bearing: 0,
+    pitch: 0
+});
+
+// *** create markers
+var Secret = [-48.4388358, -27.617626];
+
+// create the popup
+var popupSecret = new mapboxgl.Popup({offset:[0, -45]})
+    .setHTML("<strong>Secret</strong></br>Um Highline de 260 metros, um presente.");
+
+// create DOM element for the marker
+var el = document.createElement('div');
+el.id = 'marker';
+
+// create the marker
+new mapboxgl.Marker(el, {offset:[-13, -40]})
+    .setLngLat(Secret)
+    .setPopup(popupSecret) // sets a popup on this marker
+    .addTo(map);
+
+
+</script>
+
+<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

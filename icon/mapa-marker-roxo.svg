@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="23px" viewBox="0 0 15 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>mapa-marker-topos</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE" transform="translate(-252.000000, -11.000000)" fill-rule="nonzero" fill="#551A8B">
+            <g id="mapa-marker-topos" transform="translate(252.000000, 11.000000)">
+                <path d="M7.5,0 C3.35817187,0 0,3.21752929 0,7.1875 C0,8.2993164 0.263671875,9.35358793 0.734625,10.2927246 C0.76096875,10.3460918 7.5,23 7.5,23 L14.1840938,10.4499512 C14.7055781,9.47150782 15,8.36247656 15,7.1875 C15,3.21752929 11.6425781,0 7.5,0 Z M7.5,10 C5.567125,10 4,8.43229165 4,6.5 C4,4.56770834 5.567125,3 7.5,3 C9.43229165,3 11,4.56770834 11,6.5 C11,8.43229165 9.43229165,10 7.5,10 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
